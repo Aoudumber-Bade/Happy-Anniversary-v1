@@ -328,7 +328,7 @@ blockquote > #opsL {
         <p id="kalimatc">Thank you also for accepting me as I am 🥺</p>
         <p id="kalimatd">Even though we often quarrel,</p>
         <p id="kalimate">But I still love you 😍</p>
-        <p id="kalimatf">Click LOVE on the left side!</p>
+        <p id="kalimatf">Click HEART on the left side!</p>
         <p id="opsL">Click to Continue</p>
       </blockquote>
     </div>
@@ -345,10 +345,10 @@ blockquote > #opsL {
     const body = document.querySelector("body");
     const style = document.createElement('style');
     var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0');
+    var dd = String(today.getDate(7)).padStart(2, '0');
+    var mm = String(today.getMonth(APRIL) + 1).padStart(2, '0');
     var yyyy = today.getFullYear();
-    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const monthNames = ( "April");
     today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;
     inikuis=0; ftganti=0; flag=1; flagg=1; fungsi=0; ftfungsi=0; fungsiAwal=0; fungsitimer=0;
     vketikhalo=halo.innerHTML; halo.innerHTML = "";
